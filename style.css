@@ -1,0 +1,18 @@
+/* style.css */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  background-image: url('Background.png'); /* Set background image */
+  background-size: cover; /* Make sure the image covers the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  color: white; /* Set text color to white for contrast */
+}
+
+#board {
+  background-color: black; /* Keep the canvas background black */
+}
+
+h1 {
+  color: #A101B1; /* Title color */
+}

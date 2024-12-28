@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Phantom Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@1.37.0/lib/index.iife.min.js"></script>
+</head>
+<body>
+    <h1>Nova Phantom Game</h1>
+
+    <!-- Wallet Connection -->
+    <button id="connectWalletButton">Connect to Phantom Wallet</button>
+    <button id="disconnectWalletButton" style="display: none;">Disconnect Wallet</button>
+    <p>Wallet Address: <span id="walletAddress">Not connected</span></p>
+    <p>Solana Balance: <span id="walletBalance">0</span></p>
+
+    <!-- Canvas for Game -->
+    <canvas id="board"></canvas>
+
+    <!-- Game Over Screen -->
+    <div id="gameOverContainer" style="display: none;">
+        <h2>Game Over!</h2>
+        <p>Your Score: <span id="finalScore"></span></p>
+        <form id="scoreForm">
+            <input type="text" id="playerName" placeholder="Enter your name" required />
+            <button type="submit">Submit Score</button>
+        </form>
+        <button id="restartButton">Restart Game</button>
+    </div>
+
+    <!-- Leaderboard -->
+    <div id="leaderboardContainer">
+        <h2>Leaderboard</h2>
+        <ol id="leaderboard"></ol>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="gameAudio" src="nova_phantom_soundtrack.mp3" loop></audio>
+
+    <script src="phantom_wallet.js"></script>
+    <script src="nova_phantom.js" defer></script>
+</body>
+</html>
